@@ -49,7 +49,7 @@ const Routing = () => {
     useEffect(() => {
         const getApiAnswer = async () => {
             try {
-                const productsUrl = 'http://localhost:7000/api/products';
+                const productsUrl = 'http://localhost:8000/api/products';
                 const response = await axios.get(productsUrl);
                 console.log(response)
                 const data = await response.data;
