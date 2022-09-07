@@ -67,6 +67,8 @@ const Routing = () => {
     //   console.log(productsData)
     // }, [productsData])
 
+    
+
     const categories = productsData
         .map(p => p.category)
         .filter((value, index, array) => array.indexOf(value) === index);

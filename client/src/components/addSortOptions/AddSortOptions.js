@@ -1,7 +1,7 @@
 import React from 'react'
 import './AddSortOptions.css'
 import AddFilter from '../addFilter/AddFilter';
-import AddSlider from '../addSort/AddSlider'
+import AddSlider from '../addSlider/AddSlider'
 
 const AddSortOptions = (props) => {
     return (
