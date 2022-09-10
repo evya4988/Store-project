@@ -63,9 +63,22 @@ const Routing = () => {
         getApiAnswer();
     }, [])
 
+    // get api + set loading - fetch from DB
     // useEffect(() => {
-    //   console.log(productsData)
-    // }, [productsData])
+    //     const getApiAnswer = async () => {
+    //         try {
+    //             const productsUrl = 'https://store-app-6aak.onrender.com/api/products';
+    //             const response = await axios.get(productsUrl);
+    //             console.log(response)
+    //             const data = await response.data;
+    //             setProductsData(data);
+    //             setLoading(false);
+    //         } catch (error) {
+    //             console.log(error);
+    //         }
+    //     }
+    //     getApiAnswer();
+    // }, [])
 
     
 

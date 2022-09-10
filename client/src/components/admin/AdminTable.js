@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import './AdminTable.css';
 import MyContext from '../../MyContext';
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
 import ReadOnlyRow from './ReadOnlyRow';
 import EditableRow from './EditableRow';
 import axios from 'axios';
@@ -76,12 +76,12 @@ const AdminTable = ({ loading }) => {
             console.log(newProduct);
             axios({
                 method: 'post',
-                url: "http://localhost:8000/api/products",
+                url: "https://store-app-6aak.onrender.com/api/products",
                 headers: { 'content-type': 'application/json' },
                 data: newProduct
             })
                 // .post('http://localhost:8000/api/products', { newProduct })
-                .then(res => console.log('postingNewProduct ', res.data))
+                .then(res => console.log('Posting a New Product ', res.data))
                 .catch(err => console.log(err));
             // const newProducts = [newProduct, ...productsData];
             // setProductsData(newProducts);
