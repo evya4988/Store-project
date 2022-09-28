@@ -3,7 +3,7 @@ import AddSortOptions from '../addSortOptions/AddSortOptions';
 import './NavBar.css'
 import { useNavigate } from 'react-router-dom'
 
-const NavBar = (props) => {
+const NavBar = () => {
     const navigate = useNavigate();
     return (
         <nav className="product-filter">
@@ -51,7 +51,7 @@ const NavBar = (props) => {
                     <img src="https://image.shutterstock.com/image-vector/shopping-cart-icon-flat-design-600w-259703696.jpg" alt='cart icon' width="70" height="50" />
                 </div>
             </div>
-            <AddSortOptions products={props.products} />
+            <AddSortOptions />
         </nav>
     );
 }

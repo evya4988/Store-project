@@ -3,11 +3,11 @@ import './AddSortOptions.css'
 import AddFilter from '../addFilter/AddFilter';
 import AddSlider from '../addSlider/AddSlider'
 
-const AddSortOptions = (props) => {
+const AddSortOptions = () => {
     return (
         <div className='sort'>
-            <AddFilter products={props.products}/>
-            <AddSlider products={props.products}/>
+            <AddFilter />
+            <AddSlider />
         </div>
     );
 }

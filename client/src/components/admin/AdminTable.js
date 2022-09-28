@@ -71,8 +71,6 @@ const AdminTable = ({ loading }) => {
         }
 
         if (!error) {
-            // const products = { title: 'React Hooks POST Request' };
-            // try {
             console.log(newProduct);
             axios({
                 method: 'post',
@@ -80,17 +78,8 @@ const AdminTable = ({ loading }) => {
                 headers: { 'content-type': 'application/json' },
                 data: newProduct
             })
-                // .post('http://localhost:8000/api/products', { newProduct })
                 .then(res => console.log('Posting a New Product ', res.data))
                 .catch(err => console.log(err));
-            // const newProducts = [newProduct, ...productsData];
-            // setProductsData(newProducts);
-            //     console.log("new Product ID: " + newProduct._id);
-            // } catch (error) {
-            //     console.log("!error");
-            //     console.log(error.message);
-            // }
-
             handleReset();
         } else {
             alert('the price must be higher then zero');
